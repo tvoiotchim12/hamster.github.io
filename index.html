@@ -7,27 +7,34 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #67c47c; /* Зеленый фон */
         }
         #counter {
             font-size: 48px;
             padding: 20px;
-            background-color: white;
-            border: 2px solid #ccc;
+            background-color: white; /* Белый цвет текста */
             border-radius: 10px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin-top: 20px; /* Отступ сверху */
         }
         #counter:hover {
             background-color: #e0e0e0;
         }
+        #image {
+            width: 150px; /* Задайте нужный размер изображения */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            margin-bottom: 20px; /* Отступ снизу для корректного отображения */
+        }
     </style>
 </head>
 <body>
+    <img id="image" src="hamster.jpg" alt="Описание картинки"> <!-- Замените на путь к Вашей картинке -->
     <div id="counter">0</div>
 
     <script>
